@@ -254,5 +254,5 @@ class TransBasicBlock(nn.Module):
     return out
 
 
-def rednetseg():
+def model():
   return RedNetSeg(2)

@@ -25,4 +25,4 @@ class CrossEntropyLoss2d(nn.Module):
     loss_all = self.ce_loss(inputs, targets_m.long())
     return torch.sum(torch.masked_select(loss_all, mask)) / torch.sum(mask.float())
 
-cel_weighted = CrossEntropyLoss2d()
+loss_function = CrossEntropyLoss2d()
